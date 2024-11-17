@@ -1,0 +1,547 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "roboto_regular";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "roboto_regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+.container {
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+nav {
+    background: white;
+    height: 80px;
+    width: 100%;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 2;
+}
+
+label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.main_part {
+    background-image: url(./background-image.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.main_text {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+.main_text h1 {
+    font-size: 50px;
+}
+
+.main_text h3 {
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+.button a {
+    border: 1px solid rgb(39, 47, 67);
+    background-color: rgb(39, 47, 67);
+    color: white;
+    padding: 10px 30px;
+
+}
+
+.ourWork h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.ourWork .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourWork .row .col h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.ourWork .row .col p {
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.ourWork .row .col {
+    text-align: center;
+    flex-basis: 20%;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 20px;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+}
+
+.ourWork .row .col:hover {
+    background-color: #5981e7;
+    transition: all 0.5s;
+}
+
+.clients h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    color: #2D65EF;
+}
+
+.clients h1 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.clients .container .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .container .row .col h4 {
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+hr {
+    width: 500px;
+}
+
+.clients .container .row .col p {
+    width: 70%;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.clients .container .row .col a {
+    border: 1px solid rgb(39, 47, 67);
+    background-color: rgb(39, 47, 67);
+    color: white;
+    padding: 15px 40px;
+    position: relative;
+    top: 7%;
+}
+
+.clients .container .row .col a:hover {
+    border-color: red;
+    background-color: red;
+}
+
+/* why Us */
+.whyUs .container h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.whyUs .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 33%;
+}
+
+.whyUs .container .row .col {
+    width: 100%;
+    text-align: center;
+}
+
+.whyUs .container .row .col h4 {
+    font-size: 25px;
+}
+
+.whyUs .container .row .col p {
+    font-size: 17px;
+}
+
+/* what we offer */
+.weOffer .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.weOffer .container .row .col {
+    width: 100%;
+}
+
+.weOffer .container .row .col:nth-child(2) {
+    text-align: center;
+}
+
+.weOffer .container .row .col h3 {
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.weOffer .container .row .col ul {
+    padding-top: 20px;
+    list-style-type: disc;
+    margin-bottom: 40px;
+}
+
+.weOffer .container .row .col ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.weOffer h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    color: #2D65EF;
+}
+
+.weOffer h1 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.weOffer .container .row .col a {
+    border: 1px solid rgb(39, 47, 67);
+    background-color: rgb(39, 47, 67);
+    color: white;
+    padding: 15px 50px;
+}
+
+.weOffer .container .row .col a:hover {
+    background-color: red;
+    border-color: red;
+    transition: all 0.5s;
+}
+
+/* quote */
+.quote {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgb(39, 47, 67);
+}
+
+.quote .row {
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote .row .col {
+    text-align: center;
+}
+
+.quote h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.quote input {
+    padding: 13px;
+    width: 400px;
+}
+
+button {
+    background-color: red;
+    padding: 13px 50px;
+    border-color: red;
+    color: white;
+    margin-left: -4px;
+}
+
+/* ourPartners */
+.ourPartners .row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing .container h1 {
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(39, 47, 67);
+    margin-top: 30px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 300px;
+}
+
+footer h4 {
+    font-size: 20px;
+    font-family: "roboto medium";
+    color: #fff;
+    font-family: "roboto_medium";
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 17px;
+    font-family: "Roboto Regular";
+    padding-bottom: 10px;
+}
+
+footer i {
+    font-size: 20px;
+    padding: 5px;
+    color: #000000;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "roboto_medium";
+}
+
+footer p {
+    color: #fff;
+    font-family: "roboto_regular";
+}
+
+footer input {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    border-color: #000000;
+}
+
+footer input::placeholder {
+    color: #000000;
+}
+
+footer input:hover {
+    background-color: #ffffff;
+    border-color: #f60000;
+}
+
+.subscribe {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.subscribe:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.quickLinks {
+    font-size: 18px;
+    padding-bottom: 10px;
+    display: block;
+    color: #fff;
+}
+
+@media screen and (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    i {
+        color: black;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main_text {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    .clients .container .row {
+        display: block;
+    }
+
+    .clients .container .row .col {
+        text-align: center;
+    }
+
+    .clients .container .row .col p {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .clients img {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .ourWork .container .row {
+        display: block;
+    }
+
+    .whyUs .container .row {
+        display: block;
+    }
+
+    .weOffer .container .row {
+        display: block;
+    }
+
+    .weOffer .container .row .col h3 {
+        font-size: 20px;
+        padding-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .weOffer img {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .quote .row {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: block;
+    }
+
+    .quote h1 {
+        padding-bottom: 10px;
+    }
+
+    .quote .row .col input {
+        width: 70%;
+    }
+
+    button {
+        padding: 13px 30px;
+    }
+
+    .ourPartners .container .row {
+        display: block;
+    }
+
+    .ourPartners .container .row .col {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    footer .row {
+        padding: 25px 15px;
+        display: block;
+    }
+
+    footer h4 {
+        padding-top: 30px;
+    }
+}

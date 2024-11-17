@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "roboto_regular";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "roboto_regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+.container {
+    margin-left: 260px;
+    margin-right: 270px;
+}
+
+nav {
+    background: white;
+    height: 80px;
+    width: 100%;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 2;
+}
+
+label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.mainPart {
+    margin-top: 50px;
+    background-image: url(./pattern-bg-green.jpg);
+    height: 45vh;
+}
+
+.mainText h1 {
+    font-size: 38px;
+    text-align: center;
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+.ppc .container .row{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.ppc .container .row .col{
+    flex-basis: 48%;
+    width: 100%;
+}
+.ppc .container .row .col h1{
+    font-size: 38px;
+    padding-bottom: 15px;
+}
+.ppc .container .row .col p{
+    font-size: 19px;
+}
+.column{
+    margin-top: 180px;
+}
+.moreServices{
+    padding-top: 80px;
+}
+.moreServices .container .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.moreServices .container .row .col{
+    flex-basis: 48%;
+    width: 100%;
+    border: 1px solid #f7f9f9;
+    background-color: #f7f9f9;
+    padding: 50px;
+}
+.moreServices .container .row .col h2{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.moreServices .container .row .col p{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.moreServices .container .row .col .row_two{
+    display: flex;
+}
+.statistics{
+    background-image: url(../images/pattern-bg-green.jpg);
+    height: 30vh;
+}
+.statistics .row{
+    margin-top: 80px;
+    margin-left: 280px;
+    margin-right: 280px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.statistics .row .col h1{
+    font-size: 65px;
+}
+.statistics .row .col p{
+    font-size: 25px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(39, 47, 67);
+    margin-top: 30px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 300px;
+}
+
+footer h4 {
+    font-size: 20px;
+    font-family: "roboto medium";
+    color: #fff;
+    font-family: "roboto_medium";
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 17px;
+    font-family: "Roboto Regular";
+    padding-bottom: 10px;
+}
+
+footer i {
+    font-size: 20px;
+    padding: 5px;
+    color: #000000;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "roboto_medium";
+}
+footer p{
+    color: #fff;
+    font-family: "roboto_regular";
+}
+footer input {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    border-color: #000000;
+}
+
+footer input::placeholder {
+    color: #000000;
+}
+
+footer input:hover {
+    background-color: #ffffff;
+    border-color: #f60000;
+}
+
+.subscribe {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.subscribe:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.quickLinks {
+    font-size: 18px;
+    padding-bottom: 10px;
+    display: block;
+    color: #fff;
+}
+@media screen and (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    i {
+        color: black;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+    .container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .ppc .container .row{
+        display: block;
+    }
+    .ppc .container .row .col img{
+        width: 70%;
+    }
+    .column{
+        margin-top: 0;
+    }
+    .moreServices .container .row{
+        display: block;
+    }
+    .moreServices .container .row .col{
+        margin-bottom: 10px;
+    }
+    .statistics .row{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: 45px;
+    }
+    footer .row {
+        padding: 25px 15px;
+        display: block;
+    }
+    footer h4{
+        padding-top: 30px;
+    }
+}

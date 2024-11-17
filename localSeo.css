@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "roboto_regular";
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "roboto_regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+.container {
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+nav {
+    background: white;
+    height: 80px;
+    width: 100%;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 2;
+}
+
+label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.mainPart {
+    margin-top: 50px;
+    background-image: url(./pattern-bg-breez.jpg);
+    height: 40vh;
+}
+
+.mainText h1 {
+    font-size: 38px;
+    text-align: center;
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 28%;
+    left: 49%;
+}
+.localSeo h1{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.localSeo .col{
+    text-align: center;
+}
+.skills{
+    background-image: url(../images/pattern-bg-breez.jpg);
+    height: 40vh;
+}
+.skills_text{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+}
+.skills_text .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills_text .row .col{
+    flex-basis: 45%;
+    width: 100%;
+}
+.skills_text .row .col h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.skills_text .row .col p{
+    font-size: 20px;
+}
+.label{
+    font-size: 20px;
+    display: block;
+}
+progress{
+    width: 100%;
+}
+
+.costumers .container h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+.costumers .container .row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.costumers .container .row .col{
+    flex-basis: 48%;
+    width: 100%;
+    border: 1px solid #f7f9f9;
+    background-color: #f7f9f9;
+    padding: 30px;
+}
+.costumers .container .row .col p{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.more .container{
+    padding-top: 80px;
+}
+.more .container .row{
+    display: flex;
+}
+.more .container .row .col h1{
+    padding-left: 30px;
+    font-size: 35px;
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+.text{
+    padding-left: 30px;
+    font-size: 19px;
+}
+/* footer */
+footer {
+    background-color: rgb(39, 47, 67);
+    margin-top: 30px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 300px;
+}
+
+footer h4 {
+    font-size: 20px;
+    font-family: "roboto medium";
+    color: #fff;
+    font-family: "roboto_medium";
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 17px;
+    font-family: "Roboto Regular";
+    padding-bottom: 10px;
+}
+
+footer i {
+    font-size: 20px;
+    padding: 5px;
+    color: #000000;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "roboto_medium";
+}
+footer p{
+    color: #fff;
+    font-family: "roboto_regular";
+}
+footer input {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    border-color: #000000;
+}
+
+footer input::placeholder {
+    color: #000000;
+}
+
+footer input:hover {
+    background-color: #ffffff;
+    border-color: #f60000;
+}
+
+.subscribe {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.subscribe:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.quickLinks {
+    font-size: 18px;
+    padding-bottom: 10px;
+    display: block;
+    color: #fff;
+}
+@media screen and (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    i {
+        color: black;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .localSeo .container h1{
+      font-size: 35px;
+    }
+    .localSeo .container .col img{
+        width: 100%;
+    }
+    .skills_text{
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+       padding-top: 20px;
+    }
+    .more .container .row{
+        display: block;
+    }
+    .more .container .row .col img{
+        width: 100%;
+    }
+    footer .row {
+        padding: 25px 15px;
+        display: block;
+    }
+    footer h4{
+        padding-top: 30px;
+    }
+}
